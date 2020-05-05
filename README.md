@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/PagingScrollView.svg?style=flat)](https://cocoapods.org/pods/PagingScrollView)
 [![Platform](https://img.shields.io/cocoapods/p/PagingScrollView.svg?style=flat)](https://cocoapods.org/pods/PagingScrollView)
 
+![Portrait Demo](./DemoImages/Portrait.gif)
+![Portrait Demo](./DemoImages/landscape.gif)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
