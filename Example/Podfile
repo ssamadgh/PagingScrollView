@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PagingScrollView_Example' do
+  pod 'PagingScrollView', :path => '../'
+
+  target 'PagingScrollView_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
