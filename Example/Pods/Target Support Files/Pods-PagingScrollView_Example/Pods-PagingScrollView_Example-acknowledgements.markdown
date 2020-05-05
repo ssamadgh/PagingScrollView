@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## PagingScrollView
+## SwiftyPagingScrollView
 
 Copyright (c) 2020 ssamadgh@gmail.com <ssamadgh@gmail.com>
 

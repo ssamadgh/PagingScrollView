@@ -4,24 +4,24 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - PagingScrollView (0.1.0)
+  - SwiftyPagingScrollView (0.1.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
-  - PagingScrollView (from `../`)
+  - SwiftyPagingScrollView (from `../`)
 
 SPEC REPOS:
   trunk:
     - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
-  PagingScrollView:
+  SwiftyPagingScrollView:
     :path: "../"
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  PagingScrollView: a4ceb9926eaae382cc180dd588ad236e8e9c3ff8
+  SwiftyPagingScrollView: 69dca89d4bcf965fdf6331089065de0d8c14d7b6
 
-PODFILE CHECKSUM: 5be3a59aeda2772d48994bc9e139c8e7f6fbed98
+PODFILE CHECKSUM: 1bd3fe886fad32e8aa869f02d764455c7b5ac090
 
 COCOAPODS: 1.9.1

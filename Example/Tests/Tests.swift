@@ -1,5 +1,5 @@
 import XCTest
-import PagingScrollView
+import SwiftyPagingScrollView
 
 class Tests: XCTestCase {
     

@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'PagingScrollView'
+  s.name             = 'SwiftyPagingScrollView'
   s.version          = '0.1.0'
   s.summary          = 'A Simple Framework for pagingScroll supporting Parallax'
 

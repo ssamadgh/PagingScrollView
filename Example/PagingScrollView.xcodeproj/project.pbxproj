@@ -307,7 +307,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				65A85B3495357C709FED8131 /* [CP] Embed Pods Frameworks */,
+				D855E2F021444903DAB24DD9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -474,18 +474,18 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PagingScrollView_Tests/Pods-PagingScrollView_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		65A85B3495357C709FED8131 /* [CP] Embed Pods Frameworks */ = {
+		D855E2F021444903DAB24DD9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PagingScrollView_Example/Pods-PagingScrollView_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/PagingScrollView/PagingScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyPagingScrollView/SwiftyPagingScrollView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PagingScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyPagingScrollView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

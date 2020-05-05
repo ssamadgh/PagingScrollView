@@ -1,0 +1,6 @@
+framework module SwiftyPagingScrollView {
+  umbrella header "SwiftyPagingScrollView-umbrella.h"
+
+  export *
+  module * { export * }
+}

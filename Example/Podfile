@@ -3,7 +3,7 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'PagingScrollView_Example' do
-  pod 'PagingScrollView', :path => '../'
+  pod 'SwiftyPagingScrollView', :path => '../'
 
   target 'PagingScrollView_Tests' do
     inherit! :search_paths

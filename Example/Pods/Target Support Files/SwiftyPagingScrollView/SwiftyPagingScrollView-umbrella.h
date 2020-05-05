@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double PagingScrollViewVersionNumber;
-FOUNDATION_EXPORT const unsigned char PagingScrollViewVersionString[];
+FOUNDATION_EXPORT double SwiftyPagingScrollViewVersionNumber;
+FOUNDATION_EXPORT const unsigned char SwiftyPagingScrollViewVersionString[];
 

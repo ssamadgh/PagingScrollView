@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import PagingScrollView
+import SwiftyPagingScrollView
 
 class ParallaxViewController: UIViewController {
 
