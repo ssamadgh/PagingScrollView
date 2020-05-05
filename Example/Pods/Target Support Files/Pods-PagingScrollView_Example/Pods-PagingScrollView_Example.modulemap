@@ -1,0 +1,6 @@
+framework module Pods_PagingScrollView_Example {
+  umbrella header "Pods-PagingScrollView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

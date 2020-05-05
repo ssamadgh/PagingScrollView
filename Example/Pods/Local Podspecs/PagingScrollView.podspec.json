@@ -1,0 +1,22 @@
+{
+  "name": "PagingScrollView",
+  "version": "0.1.0",
+  "summary": "A short description of PagingScrollView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ssamadgh@gmail.com/PagingScrollView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ssamadgh@gmail.com": "ssamadgh@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ssamadgh@gmail.com/PagingScrollView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "PagingScrollView/Classes/**/*"
+}

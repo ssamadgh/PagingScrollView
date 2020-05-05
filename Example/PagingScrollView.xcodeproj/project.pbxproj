@@ -9,12 +9,47 @@
 /* Begin PBXBuildFile section */
 		1D584394078AFCBC3693EB97 /* Pods_PagingScrollView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA69352016ADFAC7AAA3CC1 /* Pods_PagingScrollView_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		B6B386718BA8E5B6D175A1C4 /* Pods_PagingScrollView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA39A0C26E404323D1E2B31 /* Pods_PagingScrollView_Example.framework */; };
+		E4773EC524614AD20050EB4B /* ParallaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4773EC424614AD20050EB4B /* ParallaxViewController.swift */; };
+		E4773EC724614AFA0050EB4B /* ParallaxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4773EC624614AFA0050EB4B /* ParallaxViewCell.swift */; };
+		E4773EE924614B1C0050EB4B /* pngwing.com-3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773ECA24614B1C0050EB4B /* pngwing.com-3@2x.png */; };
+		E4773EEA24614B1C0050EB4B /* pngwing.com-1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773ECB24614B1C0050EB4B /* pngwing.com-1@3x.png */; };
+		E4773EEB24614B1C0050EB4B /* pngwing.com-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773ECC24614B1C0050EB4B /* pngwing.com-1@2x.png */; };
+		E4773EEC24614B1C0050EB4B /* pngwing.com-3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773ECD24614B1C0050EB4B /* pngwing.com-3@3x.png */; };
+		E4773EED24614B1C0050EB4B /* pngwing.com-7@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773ECE24614B1C0050EB4B /* pngwing.com-7@3x.png */; };
+		E4773EEE24614B1C0050EB4B /* pngwing.com-5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773ECF24614B1C0050EB4B /* pngwing.com-5@2x.png */; };
+		E4773EEF24614B1C0050EB4B /* pngwing.com-9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773ED024614B1C0050EB4B /* pngwing.com-9@2x.png */; };
+		E4773EF024614B1C0050EB4B /* pngwing.com-9.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773ED124614B1C0050EB4B /* pngwing.com-9.png */; };
+		E4773EF124614B1C0050EB4B /* pngwing.com-8.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773ED224614B1C0050EB4B /* pngwing.com-8.png */; };
+		E4773EF224614B1C0050EB4B /* pngwing.com-9@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773ED324614B1C0050EB4B /* pngwing.com-9@3x.png */; };
+		E4773EF324614B1C0050EB4B /* pngwing.com-5@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773ED424614B1C0050EB4B /* pngwing.com-5@3x.png */; };
+		E4773EF424614B1C0050EB4B /* pngwing.com-7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773ED524614B1C0050EB4B /* pngwing.com-7@2x.png */; };
+		E4773EF524614B1C0050EB4B /* pngwing.com-0@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773ED624614B1C0050EB4B /* pngwing.com-0@3x.png */; };
+		E4773EF624614B1C0050EB4B /* pngwing.com-3.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773ED724614B1C0050EB4B /* pngwing.com-3.png */; };
+		E4773EF724614B1C0050EB4B /* pngwing.com-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773ED824614B1C0050EB4B /* pngwing.com-2@2x.png */; };
+		E4773EF824614B1C0050EB4B /* pngwing.com-2.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773ED924614B1C0050EB4B /* pngwing.com-2.png */; };
+		E4773EF924614B1C0050EB4B /* pngwing.com-0.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773EDA24614B1C0050EB4B /* pngwing.com-0.png */; };
+		E4773EFA24614B1C0050EB4B /* pngwing.com-1.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773EDB24614B1C0050EB4B /* pngwing.com-1.png */; };
+		E4773EFB24614B1C0050EB4B /* pngwing.com-5.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773EDC24614B1C0050EB4B /* pngwing.com-5.png */; };
+		E4773EFC24614B1C0050EB4B /* pngwing.com-4.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773EDD24614B1C0050EB4B /* pngwing.com-4.png */; };
+		E4773EFD24614B1C0050EB4B /* pngwing.com-6.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773EDE24614B1C0050EB4B /* pngwing.com-6.png */; };
+		E4773EFE24614B1C0050EB4B /* pngwing.com-2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773EDF24614B1C0050EB4B /* pngwing.com-2@3x.png */; };
+		E4773EFF24614B1C0050EB4B /* pngwing.com-7.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773EE024614B1C0050EB4B /* pngwing.com-7.png */; };
+		E4773F0024614B1C0050EB4B /* pngwing.com-0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773EE124614B1C0050EB4B /* pngwing.com-0@2x.png */; };
+		E4773F0124614B1C0050EB4B /* pngwing.com-4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773EE224614B1C0050EB4B /* pngwing.com-4@2x.png */; };
+		E4773F0224614B1C0050EB4B /* pngwing.com-8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773EE324614B1C0050EB4B /* pngwing.com-8@2x.png */; };
+		E4773F0324614B1C0050EB4B /* pngwing.com-6@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773EE424614B1C0050EB4B /* pngwing.com-6@3x.png */; };
+		E4773F0424614B1C0050EB4B /* pngwing.com-6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773EE524614B1C0050EB4B /* pngwing.com-6@2x.png */; };
+		E4773F0524614B1C0050EB4B /* pngwing.com-8@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773EE624614B1C0050EB4B /* pngwing.com-8@3x.png */; };
+		E4773F0624614B1C0050EB4B /* pngwing.com-4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4773EE724614B1C0050EB4B /* pngwing.com-4@3x.png */; };
+		E4773F0724614B1C0050EB4B /* Characters.json in Resources */ = {isa = PBXBuildFile; fileRef = E4773EE824614B1C0050EB4B /* Characters.json */; };
+		E4773F0A24614CAD0050EB4B /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4773F0924614CAD0050EB4B /* Character.swift */; };
+		E4773F0D246154560050EB4B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4773F0C246154560050EB4B /* UIColor+Extension.swift */; };
+		E4773F0F2461592F0050EB4B /* ParallaxViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4773F0E2461592F0050EB4B /* ParallaxViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +69,54 @@
 		607FACD01AFB9204008FA782 /* PagingScrollView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagingScrollView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* PagingScrollView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PagingScrollView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7E39AF97C2AB269EFBCB3C80 /* PagingScrollView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PagingScrollView.podspec; path = ../PagingScrollView.podspec; sourceTree = "<group>"; };
+		7E39AF97C2AB269EFBCB3C80 /* PagingScrollView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PagingScrollView.podspec; path = ../PagingScrollView.podspec; sourceTree = "<group>"; };
 		84022FF66A7040AB2DC01177 /* Pods-PagingScrollView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PagingScrollView_Example.release.xcconfig"; path = "Target Support Files/Pods-PagingScrollView_Example/Pods-PagingScrollView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8BA69352016ADFAC7AAA3CC1 /* Pods_PagingScrollView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PagingScrollView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		900FDBDF0009C5B3397F94B3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		900FDBDF0009C5B3397F94B3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B549446622A8A64B659E3129 /* Pods-PagingScrollView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PagingScrollView_Example.debug.xcconfig"; path = "Target Support Files/Pods-PagingScrollView_Example/Pods-PagingScrollView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FDC6F9088BBB8528FFD9DDCA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E4773EC424614AD20050EB4B /* ParallaxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxViewController.swift; sourceTree = "<group>"; };
+		E4773EC624614AFA0050EB4B /* ParallaxViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxViewCell.swift; sourceTree = "<group>"; };
+		E4773ECA24614B1C0050EB4B /* pngwing.com-3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-3@2x.png"; sourceTree = "<group>"; };
+		E4773ECB24614B1C0050EB4B /* pngwing.com-1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-1@3x.png"; sourceTree = "<group>"; };
+		E4773ECC24614B1C0050EB4B /* pngwing.com-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-1@2x.png"; sourceTree = "<group>"; };
+		E4773ECD24614B1C0050EB4B /* pngwing.com-3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-3@3x.png"; sourceTree = "<group>"; };
+		E4773ECE24614B1C0050EB4B /* pngwing.com-7@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-7@3x.png"; sourceTree = "<group>"; };
+		E4773ECF24614B1C0050EB4B /* pngwing.com-5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-5@2x.png"; sourceTree = "<group>"; };
+		E4773ED024614B1C0050EB4B /* pngwing.com-9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-9@2x.png"; sourceTree = "<group>"; };
+		E4773ED124614B1C0050EB4B /* pngwing.com-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-9.png"; sourceTree = "<group>"; };
+		E4773ED224614B1C0050EB4B /* pngwing.com-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-8.png"; sourceTree = "<group>"; };
+		E4773ED324614B1C0050EB4B /* pngwing.com-9@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-9@3x.png"; sourceTree = "<group>"; };
+		E4773ED424614B1C0050EB4B /* pngwing.com-5@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-5@3x.png"; sourceTree = "<group>"; };
+		E4773ED524614B1C0050EB4B /* pngwing.com-7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-7@2x.png"; sourceTree = "<group>"; };
+		E4773ED624614B1C0050EB4B /* pngwing.com-0@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-0@3x.png"; sourceTree = "<group>"; };
+		E4773ED724614B1C0050EB4B /* pngwing.com-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-3.png"; sourceTree = "<group>"; };
+		E4773ED824614B1C0050EB4B /* pngwing.com-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-2@2x.png"; sourceTree = "<group>"; };
+		E4773ED924614B1C0050EB4B /* pngwing.com-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-2.png"; sourceTree = "<group>"; };
+		E4773EDA24614B1C0050EB4B /* pngwing.com-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-0.png"; sourceTree = "<group>"; };
+		E4773EDB24614B1C0050EB4B /* pngwing.com-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-1.png"; sourceTree = "<group>"; };
+		E4773EDC24614B1C0050EB4B /* pngwing.com-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-5.png"; sourceTree = "<group>"; };
+		E4773EDD24614B1C0050EB4B /* pngwing.com-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-4.png"; sourceTree = "<group>"; };
+		E4773EDE24614B1C0050EB4B /* pngwing.com-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-6.png"; sourceTree = "<group>"; };
+		E4773EDF24614B1C0050EB4B /* pngwing.com-2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-2@3x.png"; sourceTree = "<group>"; };
+		E4773EE024614B1C0050EB4B /* pngwing.com-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-7.png"; sourceTree = "<group>"; };
+		E4773EE124614B1C0050EB4B /* pngwing.com-0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-0@2x.png"; sourceTree = "<group>"; };
+		E4773EE224614B1C0050EB4B /* pngwing.com-4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-4@2x.png"; sourceTree = "<group>"; };
+		E4773EE324614B1C0050EB4B /* pngwing.com-8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-8@2x.png"; sourceTree = "<group>"; };
+		E4773EE424614B1C0050EB4B /* pngwing.com-6@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-6@3x.png"; sourceTree = "<group>"; };
+		E4773EE524614B1C0050EB4B /* pngwing.com-6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-6@2x.png"; sourceTree = "<group>"; };
+		E4773EE624614B1C0050EB4B /* pngwing.com-8@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-8@3x.png"; sourceTree = "<group>"; };
+		E4773EE724614B1C0050EB4B /* pngwing.com-4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pngwing.com-4@3x.png"; sourceTree = "<group>"; };
+		E4773EE824614B1C0050EB4B /* Characters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Characters.json; sourceTree = "<group>"; };
+		E4773F0924614CAD0050EB4B /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		E4773F0C246154560050EB4B /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		E4773F0E2461592F0050EB4B /* ParallaxViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParallaxViewCell.xib; sourceTree = "<group>"; };
+		FDC6F9088BBB8528FFD9DDCA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +156,6 @@
 				34F3F1F4718A7CFA8FA958F5 /* Pods-PagingScrollView_Tests.debug.xcconfig */,
 				0D90AC3BB2C83D34A4CA77CA /* Pods-PagingScrollView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -114,8 +183,13 @@
 		607FACD21AFB9204008FA782 /* Example for PagingScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				E4773F0B246154300050EB4B /* Extensions */,
+				E4773F0824614CA00050EB4B /* Model */,
+				E4773EC824614B1C0050EB4B /* Resources */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				E4773EC424614AD20050EB4B /* ParallaxViewController.swift */,
+				E4773EC624614AFA0050EB4B /* ParallaxViewCell.swift */,
+				E4773F0E2461592F0050EB4B /* ParallaxViewCell.xib */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -160,6 +234,68 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		E4773EC824614B1C0050EB4B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E4773EC924614B1C0050EB4B /* images */,
+				E4773EE824614B1C0050EB4B /* Characters.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E4773EC924614B1C0050EB4B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E4773ECA24614B1C0050EB4B /* pngwing.com-3@2x.png */,
+				E4773ECB24614B1C0050EB4B /* pngwing.com-1@3x.png */,
+				E4773ECC24614B1C0050EB4B /* pngwing.com-1@2x.png */,
+				E4773ECD24614B1C0050EB4B /* pngwing.com-3@3x.png */,
+				E4773ECE24614B1C0050EB4B /* pngwing.com-7@3x.png */,
+				E4773ECF24614B1C0050EB4B /* pngwing.com-5@2x.png */,
+				E4773ED024614B1C0050EB4B /* pngwing.com-9@2x.png */,
+				E4773ED124614B1C0050EB4B /* pngwing.com-9.png */,
+				E4773ED224614B1C0050EB4B /* pngwing.com-8.png */,
+				E4773ED324614B1C0050EB4B /* pngwing.com-9@3x.png */,
+				E4773ED424614B1C0050EB4B /* pngwing.com-5@3x.png */,
+				E4773ED524614B1C0050EB4B /* pngwing.com-7@2x.png */,
+				E4773ED624614B1C0050EB4B /* pngwing.com-0@3x.png */,
+				E4773ED724614B1C0050EB4B /* pngwing.com-3.png */,
+				E4773ED824614B1C0050EB4B /* pngwing.com-2@2x.png */,
+				E4773ED924614B1C0050EB4B /* pngwing.com-2.png */,
+				E4773EDA24614B1C0050EB4B /* pngwing.com-0.png */,
+				E4773EDB24614B1C0050EB4B /* pngwing.com-1.png */,
+				E4773EDC24614B1C0050EB4B /* pngwing.com-5.png */,
+				E4773EDD24614B1C0050EB4B /* pngwing.com-4.png */,
+				E4773EDE24614B1C0050EB4B /* pngwing.com-6.png */,
+				E4773EDF24614B1C0050EB4B /* pngwing.com-2@3x.png */,
+				E4773EE024614B1C0050EB4B /* pngwing.com-7.png */,
+				E4773EE124614B1C0050EB4B /* pngwing.com-0@2x.png */,
+				E4773EE224614B1C0050EB4B /* pngwing.com-4@2x.png */,
+				E4773EE324614B1C0050EB4B /* pngwing.com-8@2x.png */,
+				E4773EE424614B1C0050EB4B /* pngwing.com-6@3x.png */,
+				E4773EE524614B1C0050EB4B /* pngwing.com-6@2x.png */,
+				E4773EE624614B1C0050EB4B /* pngwing.com-8@3x.png */,
+				E4773EE724614B1C0050EB4B /* pngwing.com-4@3x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		E4773F0824614CA00050EB4B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E4773F0924614CAD0050EB4B /* Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E4773F0B246154300050EB4B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E4773F0C246154560050EB4B /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,7 +307,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				41458A9D0B490B1FE2C1AA8A /* [CP] Embed Pods Frameworks */,
+				65A85B3495357C709FED8131 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,10 +350,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 9WH7P28T27;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 9WH7P28T27;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -228,6 +366,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -247,8 +386,40 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4773EEB24614B1C0050EB4B /* pngwing.com-1@2x.png in Resources */,
+				E4773EFF24614B1C0050EB4B /* pngwing.com-7.png in Resources */,
+				E4773EF724614B1C0050EB4B /* pngwing.com-2@2x.png in Resources */,
+				E4773EF824614B1C0050EB4B /* pngwing.com-2.png in Resources */,
+				E4773EE924614B1C0050EB4B /* pngwing.com-3@2x.png in Resources */,
+				E4773EEC24614B1C0050EB4B /* pngwing.com-3@3x.png in Resources */,
+				E4773EFC24614B1C0050EB4B /* pngwing.com-4.png in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				E4773EEA24614B1C0050EB4B /* pngwing.com-1@3x.png in Resources */,
+				E4773EF324614B1C0050EB4B /* pngwing.com-5@3x.png in Resources */,
+				E4773EF524614B1C0050EB4B /* pngwing.com-0@3x.png in Resources */,
+				E4773EFB24614B1C0050EB4B /* pngwing.com-5.png in Resources */,
+				E4773EED24614B1C0050EB4B /* pngwing.com-7@3x.png in Resources */,
+				E4773EF024614B1C0050EB4B /* pngwing.com-9.png in Resources */,
+				E4773F0624614B1C0050EB4B /* pngwing.com-4@3x.png in Resources */,
+				E4773EFA24614B1C0050EB4B /* pngwing.com-1.png in Resources */,
+				E4773F0F2461592F0050EB4B /* ParallaxViewCell.xib in Resources */,
+				E4773EFD24614B1C0050EB4B /* pngwing.com-6.png in Resources */,
+				E4773F0324614B1C0050EB4B /* pngwing.com-6@3x.png in Resources */,
+				E4773EF624614B1C0050EB4B /* pngwing.com-3.png in Resources */,
+				E4773EF924614B1C0050EB4B /* pngwing.com-0.png in Resources */,
+				E4773EEF24614B1C0050EB4B /* pngwing.com-9@2x.png in Resources */,
+				E4773F0224614B1C0050EB4B /* pngwing.com-8@2x.png in Resources */,
+				E4773F0424614B1C0050EB4B /* pngwing.com-6@2x.png in Resources */,
+				E4773EF124614B1C0050EB4B /* pngwing.com-8.png in Resources */,
+				E4773F0024614B1C0050EB4B /* pngwing.com-0@2x.png in Resources */,
+				E4773F0124614B1C0050EB4B /* pngwing.com-4@2x.png in Resources */,
+				E4773EEE24614B1C0050EB4B /* pngwing.com-5@2x.png in Resources */,
+				E4773EF424614B1C0050EB4B /* pngwing.com-7@2x.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				E4773F0724614B1C0050EB4B /* Characters.json in Resources */,
+				E4773EFE24614B1C0050EB4B /* pngwing.com-2@3x.png in Resources */,
+				E4773EF224614B1C0050EB4B /* pngwing.com-9@3x.png in Resources */,
+				E4773F0524614B1C0050EB4B /* pngwing.com-8@3x.png in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,7 +474,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PagingScrollView_Tests/Pods-PagingScrollView_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		41458A9D0B490B1FE2C1AA8A /* [CP] Embed Pods Frameworks */ = {
+		65A85B3495357C709FED8131 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -350,8 +521,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				E4773EC524614AD20050EB4B /* ParallaxViewController.swift in Sources */,
+				E4773EC724614AFA0050EB4B /* ParallaxViewCell.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				E4773F0A24614CAD0050EB4B /* Character.swift in Sources */,
+				E4773F0D246154560050EB4B /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +612,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -484,7 +658,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -497,10 +671,11 @@
 			baseConfigurationReference = B549446622A8A64B659E3129 /* Pods-PagingScrollView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9WH7P28T27;
 				INFOPLIST_FILE = PagingScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samad.demo.PagingScrollView-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -512,10 +687,11 @@
 			baseConfigurationReference = 84022FF66A7040AB2DC01177 /* Pods-PagingScrollView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9WH7P28T27;
 				INFOPLIST_FILE = PagingScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samad.demo.PagingScrollView-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -526,6 +702,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 34F3F1F4718A7CFA8FA958F5 /* Pods-PagingScrollView_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 9WH7P28T27;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -548,6 +725,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D90AC3BB2C83D34A4CA77CA /* Pods-PagingScrollView_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 9WH7P28T27;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
