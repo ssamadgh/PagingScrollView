@@ -5,8 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/PagingScrollView.svg?style=flat)](https://cocoapods.org/pods/PagingScrollView)
 [![Platform](https://img.shields.io/cocoapods/p/PagingScrollView.svg?style=flat)](https://cocoapods.org/pods/PagingScrollView)
 
-![Portrait Demo](./DemoImages/Portrait.gif)
-![Portrait Demo](./DemoImages/landscape.gif)
+<p align="center"><img src="DemoImages/Portrait.gif" width="187" height="405"/>
+<p align="center"><img src="DemoImages/landscape.gif" width="405" height="187"/>
 
 ## Example
 
