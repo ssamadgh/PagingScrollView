@@ -24,19 +24,20 @@ open class PagingScrollView: UIScrollView, UIScrollViewDelegate {
 	
 	public var pageSpace: CGFloat = 0
 	
-	private var pagePadding: CGFloat { return pageSpace/2 }
 	public var numberOfVisiblePages: Int!
-	
+    public private(set) var visiblePages: Set<Page> = []
+
 	var recycledPages: Set<Page> = []
-	var visiblePages: Set<Page> = []
 	var pagesIndex: [Page : Int] = [:]
 	
-	private (set) var currentIndex: Int = 0
+	public private(set) var currentIndex: Int = 0
 	
-	lazy var currentPage: Page = {
+	public private(set) lazy var currentPage: Page = {
 		return self.pageForIndex(currentIndex)!
 	}()
 	
+    private var pagePadding: CGFloat { return pageSpace/2 }
+
 	private var screenWidth: CGFloat = {
 		return UIScreen.main.bounds.width
 	}()
