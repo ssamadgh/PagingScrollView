@@ -174,8 +174,8 @@ open class PagingScrollView: UIScrollView, UIScrollViewDelegate {
 		
 		//Recycle no longer needs pages
 		for page in self.visiblePages {
-			let pageIndex = pagesIndex[page]!
-			if pageIndex < firstNeededPageIndex || pageIndex > lastNeededPageIndex {
+			
+			if let pageIndex = pagesIndex[page], pageIndex < firstNeededPageIndex || pageIndex > lastNeededPageIndex {
 				//            if page.index < firstNeededPageIndex || page.index > lastNeededPageIndex {
 				self.recycledPages.insert(page)
 				page.removeFromSuperview()
@@ -190,6 +190,9 @@ open class PagingScrollView: UIScrollView, UIScrollViewDelegate {
 					fatalError("You should implement PagingScrollViewDataSource methods")
 				}
 				
+				pagesIndex[page] = index
+				page.frame = self.frameForPage(at: index)
+
 				self.addSubview(page)
 				self.visiblePages.insert(page)
 				
@@ -235,8 +238,7 @@ open class PagingScrollView: UIScrollView, UIScrollViewDelegate {
 	
 	public func isDisplayingPage(forIndex index: Int) -> Bool {
 		for page in self.visiblePages {
-			let pageIndex = pagesIndex[page]!
-			if pageIndex == index {
+			if let pageIndex = pagesIndex[page], pageIndex == index {
 				return true
 			}
 		}
@@ -246,11 +248,13 @@ open class PagingScrollView: UIScrollView, UIScrollViewDelegate {
 	private var cellClass: AnyClass?
 	private var nib: UINib?
 	
+//	public func regsiter(_ pageClass: AnyClass?, forPageResueIdentifier: String)
 	public func registerForPageResue(_ cellClass: AnyClass?) {
 		self.cellClass = cellClass
 		self.nib = nil
 	}
 	
+//	public func regsiter(_ nib: UINib?, forPageResueIdentifier: String)
 	public func registerForPageResue(_ nib: UINib?) {
 		self.nib = nib
 		self.cellClass = nil
@@ -270,17 +274,14 @@ open class PagingScrollView: UIScrollView, UIScrollViewDelegate {
 				
 			}
 			else {
-				guard let nibPage = nib!.instantiate(withOwner: nil, options: nil).first as? Page else {
+				guard let nibPage = nib?.instantiate(withOwner: nil, options: nil).first as? Page else {
 					fatalError("nib file Class Should be subclass of `UIView`")
 				}
 				
 				page = nibPage
 			}
 		}
-		
-		pagesIndex[page] = index
-		page.frame = self.frameForPage(at: index)
-		
+				
 		return page
 	}
 	
@@ -305,7 +306,14 @@ open class PagingScrollView: UIScrollView, UIScrollViewDelegate {
 	}
 	
 	@objc func handleSingleTap(_ gesture: UITapGestureRecognizer) {
-		self.pagingScrollViewDelegate?.pagingScrollView(self, didSelectPageAt: self.currentIndex)
+		for page in self.visiblePages {
+			let pageFrame = page.frame
+			let gesturePoint = gesture.location(in: gesture.view)
+			if pageFrame.contains(gesturePoint), let index = indexForPage(page) {
+				self.pagingScrollViewDelegate?.pagingScrollView(self, didSelectPageAt: index)
+				return
+			}
+		}
 	}
 	
 	func offsetFor(index: Int) -> CGFloat {

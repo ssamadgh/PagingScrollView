@@ -20,8 +20,8 @@ class ParallaxViewController: UIViewController {
 		super.viewDidLoad()
 		
 		self.pagingScrollView = PagingScrollView()
-		let screenWidth = UIScreen.main.bounds.width
-		let screenHeihgt = UIScreen.main.bounds.height
+		let screenWidth = 300
+		let screenHeihgt = 300
 		
 		let pageWidth = min(screenWidth, screenHeihgt) - 100
 		let pageSize = CGSize(width: pageWidth, height: pageWidth)
@@ -31,6 +31,7 @@ class ParallaxViewController: UIViewController {
 		self.pagingScrollView.registerForPageResue(UINib(nibName: "ParallaxViewCell", bundle: nil))
 		self.pagingScrollView.pagingScrollViewDataSource = self
 		self.pagingScrollView.pagingScrollViewDelegate = self
+		self.pagingScrollView.scrollDelegate = self
 		self.pagingScrollView.autoresizingMask = [.flexibleTopMargin, .flexibleBottomMargin]
 		self.view.addSubview(self.pagingScrollView)
 		
@@ -71,6 +72,7 @@ extension ParallaxViewController: PagingScrollViewDataSource, PagingScrollViewDe
 	}
 	
 	func pagingScrollView(_ pagingScrollView: PagingScrollView, pageAt index: Int) -> UIView {
+		
 		let page = pagingScrollView.dequeueReusablePage(for: index) as! ParallaxViewCell
 		
 		let entity = self.list[index]
@@ -80,10 +82,19 @@ extension ParallaxViewController: PagingScrollViewDataSource, PagingScrollViewDe
 	}
 	
 	func pagingScrollView(_ pagingScrollView: PagingScrollView, didSelectPageAt index: Int) {
-		let page = pagingScrollView.pageForIndex(index) as! ParallaxViewCell
+		let page = pagingScrollView.pageForIndex(index) as? ParallaxViewCell
 		let entity = self.list[index]
 		print("Page did select with index \(index) and title \(entity.name)")
 	}
 	
+	
+}
+
+
+extension ParallaxViewController: PagingScrollViewScrollDelegate {
+	
+	func pagingScrollViewDidEndDecelerating(_ pagingScrollView: PagingScrollView) {
+		print("current index is \(pagingScrollView.currentIndex)")
+	}
 	
 }
