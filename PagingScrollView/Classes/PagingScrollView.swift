@@ -240,20 +240,12 @@ open class PagingScrollView: UIScrollView, UIScrollViewDelegate {
 		return false
 	}
 
-	public func regsiter(_ pageClass: AnyClass?, forPageResueIdentifier identifier: String) {
+	public func register(_ pageClass: AnyClass?, forPageResueIdentifier identifier: String) {
 		self.typeDic[identifier] = pageClass == nil ? nil : .pageClass(pageClass!)
 	}
 	
-	public func regsiter(_ nib: UINib?, forPageResueIdentifier identifier: String) {
+	public func register(_ nib: UINib?, forPageResueIdentifier identifier: String) {
 		self.typeDic[identifier] = nib == nil ? nil : .nib(nib!)
-	}
-	
-	func doSome(index: Int) {
-		
-	}
-	
-	func doSome(index: Int?) {
-		
 	}
 
 	public func dequeueReusablePage(withIdentifier identifier: String) -> Page {
