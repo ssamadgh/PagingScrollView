@@ -50,6 +50,8 @@
 		E4773F0A24614CAD0050EB4B /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4773F0924614CAD0050EB4B /* Character.swift */; };
 		E4773F0D246154560050EB4B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4773F0C246154560050EB4B /* UIColor+Extension.swift */; };
 		E4773F0F2461592F0050EB4B /* ParallaxViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4773F0E2461592F0050EB4B /* ParallaxViewCell.xib */; };
+		E4822F9F24AFAA1800DE8FA8 /* InvertedParallaxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4822F9E24AFAA1800DE8FA8 /* InvertedParallaxViewCell.swift */; };
+		E4822FA124AFAA5C00DE8FA8 /* InvertedParallaxViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4822FA024AFAA5C00DE8FA8 /* InvertedParallaxViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +118,8 @@
 		E4773F0924614CAD0050EB4B /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		E4773F0C246154560050EB4B /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		E4773F0E2461592F0050EB4B /* ParallaxViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParallaxViewCell.xib; sourceTree = "<group>"; };
+		E4822F9E24AFAA1800DE8FA8 /* InvertedParallaxViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertedParallaxViewCell.swift; sourceTree = "<group>"; };
+		E4822FA024AFAA5C00DE8FA8 /* InvertedParallaxViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvertedParallaxViewCell.xib; sourceTree = "<group>"; };
 		FDC6F9088BBB8528FFD9DDCA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,8 +192,8 @@
 				E4773EC824614B1C0050EB4B /* Resources */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				E4773EC424614AD20050EB4B /* ParallaxViewController.swift */,
-				E4773EC624614AFA0050EB4B /* ParallaxViewCell.swift */,
-				E4773F0E2461592F0050EB4B /* ParallaxViewCell.xib */,
+				E4822F9D24AFA9F900DE8FA8 /* InvertedParallaxViewCell */,
+				E4822F9C24AFA9F300DE8FA8 /* ParallaxViewCell */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -296,6 +300,24 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		E4822F9C24AFA9F300DE8FA8 /* ParallaxViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E4773EC624614AFA0050EB4B /* ParallaxViewCell.swift */,
+				E4773F0E2461592F0050EB4B /* ParallaxViewCell.xib */,
+			);
+			path = ParallaxViewCell;
+			sourceTree = "<group>";
+		};
+		E4822F9D24AFA9F900DE8FA8 /* InvertedParallaxViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E4822F9E24AFAA1800DE8FA8 /* InvertedParallaxViewCell.swift */,
+				E4822FA024AFAA5C00DE8FA8 /* InvertedParallaxViewCell.xib */,
+			);
+			path = InvertedParallaxViewCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -396,6 +418,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				E4773EEA24614B1C0050EB4B /* pngwing.com-1@3x.png in Resources */,
 				E4773EF324614B1C0050EB4B /* pngwing.com-5@3x.png in Resources */,
+				E4822FA124AFAA5C00DE8FA8 /* InvertedParallaxViewCell.xib in Resources */,
 				E4773EF524614B1C0050EB4B /* pngwing.com-0@3x.png in Resources */,
 				E4773EFB24614B1C0050EB4B /* pngwing.com-5.png in Resources */,
 				E4773EED24614B1C0050EB4B /* pngwing.com-7@3x.png in Resources */,
@@ -523,6 +546,7 @@
 			files = (
 				E4773EC524614AD20050EB4B /* ParallaxViewController.swift in Sources */,
 				E4773EC724614AFA0050EB4B /* ParallaxViewCell.swift in Sources */,
+				E4822F9F24AFAA1800DE8FA8 /* InvertedParallaxViewCell.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				E4773F0A24614CAD0050EB4B /* Character.swift in Sources */,
 				E4773F0D246154560050EB4B /* UIColor+Extension.swift in Sources */,

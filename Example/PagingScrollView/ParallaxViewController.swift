@@ -28,13 +28,14 @@ class ParallaxViewController: UIViewController {
 		
 		self.pagingScrollView.pageSize = pageSize
 		self.pagingScrollView.pageSpace = 10
-		self.pagingScrollView.registerForPageResue(UINib(nibName: "ParallaxViewCell", bundle: nil))
+		self.pagingScrollView.regsiter(UINib(nibName: "ParallaxViewCell", bundle: nil), forPageResueIdentifier: "pageView")
+		self.pagingScrollView.regsiter(UINib(nibName: "InvertedParallaxViewCell", bundle: nil), forPageResueIdentifier: "InvertPageView")
+
 		self.pagingScrollView.pagingScrollViewDataSource = self
 		self.pagingScrollView.pagingScrollViewDelegate = self
 		self.pagingScrollView.scrollDelegate = self
 		self.pagingScrollView.autoresizingMask = [.flexibleTopMargin, .flexibleBottomMargin]
 		self.view.addSubview(self.pagingScrollView)
-		
 		
 		// Do any additional setup after loading the view.
 		DispatchQueue.global().async {
@@ -73,12 +74,23 @@ extension ParallaxViewController: PagingScrollViewDataSource, PagingScrollViewDe
 	
 	func pagingScrollView(_ pagingScrollView: PagingScrollView, pageAt index: Int) -> UIView {
 		
-		let page = pagingScrollView.dequeueReusablePage(for: index) as! ParallaxViewCell
-		
 		let entity = self.list[index]
-		page.entity = entity
+
+		if index%2 == 0 {
+			let page = pagingScrollView.dequeueReusablePage(withIdentifier: "pageView", for: index) as! ParallaxViewCell
+			
+			page.entity = entity
+			return page
+
+		}
+		else {
+			let page = pagingScrollView.dequeueReusablePage(withIdentifier: "InvertPageView", for: index) as! InvertedParallaxViewCell
+			
+			page.entity = entity
+			return page
+
+		}
 		
-		return page
 	}
 	
 	func pagingScrollView(_ pagingScrollView: PagingScrollView, didSelectPageAt index: Int) {

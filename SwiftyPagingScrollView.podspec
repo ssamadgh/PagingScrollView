@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftyPagingScrollView'
-  s.version          = '0.1.2'
+  s.version          = '0.2.0'
   s.summary          = 'A Simple Framework for pagingScroll supporting Parallax'
 
 # This description is used to generate tags and improve search results.

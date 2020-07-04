@@ -10,6 +10,12 @@ import UIKit
 
 open class PagingScrollView: UIScrollView, UIScrollViewDelegate {
 	
+	enum ViewType {
+		case pageClass(AnyClass), nib(UINib)
+	}
+	
+	var typeDic: [String : ViewType] = [:]
+	
 	public typealias Page = UIView
 	
 	public weak var pagingScrollViewDataSource: PagingScrollViewDataSource?
@@ -48,10 +54,10 @@ open class PagingScrollView: UIScrollView, UIScrollViewDelegate {
 	
 	var singleTap: UITapGestureRecognizer!
 	
-	override public func didMoveToSuperview() {
+	override open func didMoveToSuperview() {
 		self.frame = self.frameForPagingScrollView()
 		self.contentSize = self.contentSizeForPagingScrollView()
-		self.contentOffset.x = self.offsetFor(index: self.currentIndex)
+		self.contentOffset.x = self.offsetFor(index: self.currentIndex).x
 		self.calculateNumberOfVisiblePages()
 		self.tilePages()
 	}
@@ -122,8 +128,9 @@ open class PagingScrollView: UIScrollView, UIScrollViewDelegate {
 		return pageFrame
 	}
 	
-	public func setCurrentIndex(to index: Int) {
+	public func scrollToPage(at index: Int, animated: Bool) {
 		self.currentIndex = index
+		self.setContentOffset(offsetFor(index: index), animated: animated)
 	}
 	
 	//MARK: - Tiling and page configuration
@@ -158,18 +165,6 @@ open class PagingScrollView: UIScrollView, UIScrollViewDelegate {
 				}
 				diff -= 1
 			}
-			
-			//            if firstNeededPageIndex == 0 {
-			//                lastNeededPageIndex = min(numberOfVisiblePages - 1, max(0, self.pagesCount - 1))
-			//            }
-			//            else {
-			//				while diff > 0 {
-			//					if firstTurn {
-			//						firstNeededPageIndex = max(0, firstNeededPageIndex - 1)
-			//					}
-			//				}
-			//            }
-			
 		}
 		
 		//Recycle no longer needs pages
@@ -244,52 +239,72 @@ open class PagingScrollView: UIScrollView, UIScrollViewDelegate {
 		}
 		return false
 	}
-	
-	private var cellClass: AnyClass?
-	private var nib: UINib?
-	
-//	public func regsiter(_ pageClass: AnyClass?, forPageResueIdentifier: String)
-	public func registerForPageResue(_ cellClass: AnyClass?) {
-		self.cellClass = cellClass
-		self.nib = nil
+
+	public func regsiter(_ pageClass: AnyClass?, forPageResueIdentifier identifier: String) {
+		self.typeDic[identifier] = pageClass == nil ? nil : .pageClass(pageClass!)
 	}
 	
-//	public func regsiter(_ nib: UINib?, forPageResueIdentifier: String)
-	public func registerForPageResue(_ nib: UINib?) {
-		self.nib = nib
-		self.cellClass = nil
+	public func regsiter(_ nib: UINib?, forPageResueIdentifier identifier: String) {
+		self.typeDic[identifier] = nib == nil ? nil : .nib(nib!)
 	}
 	
-	public func dequeueReusablePage(for index: Int) -> Page {
+	func doSome(index: Int) {
+		
+	}
+	
+	func doSome(index: Int?) {
+		
+	}
+
+	public func dequeueReusablePage(withIdentifier identifier: String) -> Page {
+		privateDequeueReusablePage(withIdentifier: identifier, for: nil)
+	}
+	
+	public func dequeueReusablePage(withIdentifier identifier: String, for index: Int) -> Page {
+		privateDequeueReusablePage(withIdentifier: identifier, for: index)
+	}
+	
+	private func privateDequeueReusablePage(withIdentifier identifier: String, for index: Int?) -> Page {
 		let page: Page
 		
-		if let recyclePage = self.dequeueRecycledPage() {
+		if let recyclePage = self.dequeueRecycledPage(for: index) {
 			page = recyclePage
 		}
 		else {
 			
-			if cellClass is Page.Type {
-				let classPage = (cellClass as! Page.Type).init()
-				page = classPage
+			if let type = typeDic[identifier] {
+				
+				switch type {
+				case .pageClass(let pageClass):
+					let classPage = (pageClass as! Page.Type).init()
+					page = classPage
+
+				case .nib(let nib):
+					guard let nibPage = nib.instantiate(withOwner: nil, options: nil).first as? Page else {
+						fatalError("nib file Class Should be subclass of `UIView`")
+					}
+					
+					page = nibPage
+
+				}
 				
 			}
 			else {
-				guard let nibPage = nib?.instantiate(withOwner: nil, options: nil).first as? Page else {
-					fatalError("nib file Class Should be subclass of `UIView`")
-				}
-				
-				page = nibPage
+				page = Page()
 			}
+						
 		}
 				
 		return page
 	}
 	
-	private func dequeueRecycledPage() -> Page? {
-		if let page = self.recycledPages.first {
-			self.recycledPages.removeFirst()
+	private func dequeueRecycledPage(for index: Int? = nil) -> Page? {
+		
+		if let page = index == nil ? self.recycledPages.first : self.recycledPages.first(where: { pagesIndex[$0] == index }) {
+			self.recycledPages.remove(page)
 			return page
 		}
+		
 		return nil
 	}
 	
@@ -316,11 +331,12 @@ open class PagingScrollView: UIScrollView, UIScrollViewDelegate {
 		}
 	}
 	
-	func offsetFor(index: Int) -> CGFloat {
+	func offsetFor(index: Int) -> CGPoint {
+		let yOffset = self.contentOffset.y
 		let width = self.bounds.width
 		
-		let offset = CGFloat(index)*width
-		return offset
+		let xOffset = CGFloat(index)*width
+		return CGPoint(x: xOffset, y: yOffset)
 	}
 	
 	public func reloadData() {
@@ -329,7 +345,7 @@ open class PagingScrollView: UIScrollView, UIScrollViewDelegate {
 		let numberOfPages = self.pagingScrollViewDataSource?.numberOfPages() ?? 0
 		let currentIndex = self.currentIndex < numberOfPages ? self.currentIndex : max(0, numberOfPages - 1)
 		self.contentSize = self.contentSizeForPagingScrollView()
-		self.contentOffset.x = self.offsetFor(index: currentIndex)
+		self.contentOffset.x = self.offsetFor(index: currentIndex).x
 		self.tilePages()
 	}
 	
@@ -338,7 +354,7 @@ open class PagingScrollView: UIScrollView, UIScrollViewDelegate {
 		func updateLayout() {
 			self.frame = self.frameForPagingScrollView()
 			self.contentSize = self.contentSizeForPagingScrollView()
-			self.contentOffset.x = self.offsetFor(index: self.currentIndex)
+			self.contentOffset.x = self.offsetFor(index: self.currentIndex).x
 			self.calculateNumberOfVisiblePages()
 			for page in self.visiblePages {
 				if let index = self.indexForPage(page) {
