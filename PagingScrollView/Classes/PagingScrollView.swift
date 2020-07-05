@@ -286,7 +286,9 @@ open class PagingScrollView: UIScrollView, UIScrollViewDelegate {
 			}
 						
 		}
-				
+		
+		page.frame.size = pageSize
+
 		return page
 	}
 	
