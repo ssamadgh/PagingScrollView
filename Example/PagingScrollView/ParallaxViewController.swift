@@ -28,8 +28,8 @@ class ParallaxViewController: UIViewController {
 		
 		self.pagingScrollView.pageSize = pageSize
 		self.pagingScrollView.pageSpace = 10
-		self.pagingScrollView.regsiter(UINib(nibName: "ParallaxViewCell", bundle: nil), forPageResueIdentifier: "pageView")
-		self.pagingScrollView.regsiter(UINib(nibName: "InvertedParallaxViewCell", bundle: nil), forPageResueIdentifier: "InvertPageView")
+		self.pagingScrollView.register(UINib(nibName: "ParallaxViewCell", bundle: nil), forPageResueIdentifier: "pageView")
+		self.pagingScrollView.register(UINib(nibName: "InvertedParallaxViewCell", bundle: nil), forPageResueIdentifier: "InvertPageView")
 
 		self.pagingScrollView.pagingScrollViewDataSource = self
 		self.pagingScrollView.pagingScrollViewDelegate = self
