@@ -21,15 +21,22 @@ public protocol PagingScrollViewDataSource: class {
 }
 
 public protocol PagingScrollViewScrollDelegate: class {
-    
-    func pagingScrollViewDidScroll(_ pagingScrollView: PagingScrollView)
-    func pagingScrollViewDidEndDecelerating(_ pagingScrollView: PagingScrollView)
+	
+	func pagingScrollViewDidScroll(_ pagingScrollView: PagingScrollView)
+	func pagingScrollViewWillBeginDragging(_ scrollView: PagingScrollView)
+	func pagingScrollViewWillEndDragging(_ scrollView: PagingScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>)
+	func pagingScrollViewDidEndDragging(_ scrollView: PagingScrollView, willDecelerate decelerate: Bool)
+	func pagingScrollViewWillBeginDecelerating(_ scrollView: PagingScrollView)
+	func pagingScrollViewDidEndDecelerating(_ pagingScrollView: PagingScrollView)
 }
 
 
 public extension PagingScrollViewScrollDelegate {
     
     func pagingScrollViewDidScroll(_ pagingScrollView: PagingScrollView) { }
+	func pagingScrollViewWillBeginDragging(_ scrollView: PagingScrollView) {}
+	func pagingScrollViewWillEndDragging(_ scrollView: PagingScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {}
+	func pagingScrollViewDidEndDragging(_ scrollView: PagingScrollView, willDecelerate decelerate: Bool) {}
+	func pagingScrollViewWillBeginDecelerating(_ scrollView: PagingScrollView) {}
     func pagingScrollViewDidEndDecelerating(_ pagingScrollView: PagingScrollView) { }
-
 }

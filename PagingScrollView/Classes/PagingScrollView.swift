@@ -221,6 +221,23 @@ open class PagingScrollView: UIScrollView, UIScrollViewDelegate {
 		self.scrollDelegate?.pagingScrollViewDidScroll(self)
 	}
 	
+	public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+		self.scrollDelegate?.pagingScrollViewWillBeginDragging(self)
+	}
+	public func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+		self.scrollDelegate?.pagingScrollViewWillEndDragging(self, withVelocity: velocity, targetContentOffset: targetContentOffset)
+	}
+	
+	public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+		self.scrollDelegate?.pagingScrollViewDidEndDragging(self, willDecelerate: decelerate)
+	}
+	
+	public func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
+		self.scrollDelegate?.pagingScrollViewWillBeginDecelerating(self)
+	}
+	
+	
+	
 	public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
 		let width = self.bounds.width
 		let currentIndex = (self.contentOffset.x + width*0.5)/width
